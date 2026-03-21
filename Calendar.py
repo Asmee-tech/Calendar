@@ -1,0 +1,23 @@
+from tkinter import*
+import calendar
+screen=Tk()
+screen.geometry("250x140")
+screen.config(background="white")
+screen.title("Calendar")
+def show_cal():
+    screen1=Tk()
+    screen1.config(backround="white")
+    screen1.title("Calendar")
+    screen1.geometry("550x600")
+    get=int(enter.get())
+cal=Label(screen,text="CALENDAR",fg="black",bg="gray",font=("Merriweather",50))
+year=Label(screen,text="Enter year",fg="black",bg="green",font=("Merriweather",20))
+enter=Entry(screen,width=30)
+show=Button(screen,text="Show Calendar",fg="black",bg="red",font=("Merriweather",30))
+exit=Button(screen,text="Exit",fg="black",bg="red",font=("Merriweather",30))
+cal.grid(row=1,column=1)
+year.grid(row=3,column=1)
+enter.grid(row=4,column=1)
+show.grid(row=5,column=1)
+exit.grid(row=6,column=1)
+screen.mainloop()
